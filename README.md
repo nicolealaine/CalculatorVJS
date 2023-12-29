@@ -22,6 +22,10 @@
 ## Screenshots
 ![image](https://github.com/nicolealaine/CalculatorVJS/assets/29171814/9f81c14b-d313-4477-b822-120983612bb8)
 ![image](https://github.com/nicolealaine/CalculatorVJS/assets/29171814/a2da516b-7830-4e70-bc42-725ad0952421)
+![image](https://github.com/nicolealaine/CalculatorVJS/assets/29171814/cc6e8230-45d8-463f-9672-4b55924eb660)
+![image](https://github.com/nicolealaine/CalculatorVJS/assets/29171814/bdf05956-0cb9-44c5-996a-f5593fd7f5f8)
+
+
 
 ## Technologies Used
 - HTML
