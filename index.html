@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <script src="theme.js"></script>
+  <title>Vite App</title>
+</head>
+
+<body class="theme1">
+  <div id="app">
+    <div class="calculator">
+      <div class="calculator__header">
+        <div class="calculator__title">
+          <h1>calc</h1>
+        </div>
+        <div class="calculator__theme">
+          <div class="toggle__title">
+            <p>theme</p>
+          </div>
+          <div class="toggle">
+            <div class="toggle__numbers">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div class="toggle__button">
+              <div class="toggle__dot">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calculator__display">
+        <p class="display__content">0</p>
+      </div>
+      <div class="calculator__keypad">
+        <button data-value="7" class="btn num">7</button>
+        <button data-value="8" class="btn num">8</button>
+        <button data-value="9" class="btn num">9</button>
+        <button class="btn delete">del</button>
+        <button data-value="4" class="btn num">4</button>
+        <button data-value="5" class="btn num">5</button>
+        <button data-value="6" class="btn num">6</button>
+        <button data-value="+" class="btn oper">+</button>
+        <button data-value="1" class="btn num">1</button>
+        <button data-value="2" class="btn num">2</button>
+        <button data-value="3" class="btn num">3</button>
+        <button data-value="-" class="btn oper">-</button>
+        <button data-value="." class="btn oper">.</button>
+        <button data-value="0" class="btn num">0</button>
+        <button data-value="/" class="btn oper">/</button>
+        <button data-value="*" class="btn oper">x</button>
+        <button class="btn reset">reset</button>
+        <button class="btn equals">=</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
