@@ -1,5 +1,3 @@
-import "./style.scss";
-
 document.addEventListener("DOMContentLoaded", function (event) {
   let displayValue = "";
   let total = "";
