@@ -11,56 +11,60 @@
 }
 
 [class="theme1"] {
---body-bkgd: hsl(222, 26%, 31%);
---display-bkgd:  hsl(224, 36%, 15%);
---keypad-bkgd: hsl(223, 31%, 20%);
---btn-bkgd-main: hsl(30, 25%, 89%);
---btn-bkgd-main-shadow: hsl(28, 16%, 65%);
---btn-bkgd-reset: hsl(225, 21%, 49%);
---btn-bkgd-reset-shadow: hsl(224, 28%, 35%);
---btn-bkgd-equals: hsl(6, 63%, 50%);
---btn-bkgd-equals-shadow: hsl(6, 70%, 34%);
---header-text: white;
---main-key-text: hsl(221, 14%, 31%);
---secondary-key-text: white;
---equals-key-text: white;
---toggle-location: start;
+  --body-bkgd: hsl(222, 26%, 31%);
+  --display-bkgd: hsl(224, 36%, 15%);
+  --keypad-bkgd: hsl(223, 31%, 20%);
+  --btn-bkgd-main: hsl(30, 25%, 89%);
+  --btn-bkgd-main-shadow: hsl(28, 16%, 65%);
+  --btn-bkgd-reset: hsl(225, 21%, 49%);
+  --btn-bkgd-reset-shadow: hsl(224, 28%, 35%);
+  --btn-bkgd-equals: hsl(6, 63%, 50%);
+  --btn-bkgd-equals-shadow: hsl(6, 70%, 34%);
+  --header-text: white;
+  --prev-oper-text: rgba(255, 255, 255, 0.7);
+  --main-key-text: hsl(221, 14%, 31%);
+  --secondary-key-text: white;
+  --equals-key-text: white;
+  --toggle-location: start;
 }
 
 [class="theme2"] {
   --body-bkgd: hsl(0, 0%, 90%);
---display-bkgd:  hsl(0, 0%, 93%);
---keypad-bkgd: hsl(0, 5%, 81%);
---btn-bkgd-main: hsl(45, 7%, 89%);
---btn-bkgd-main-shadow: hsl(35, 11%, 61%);
---btn-bkgd-reset: hsl(185, 42%, 37%);
---btn-bkgd-reset-shadow: hsl(185, 58%, 25%);
---btn-bkgd-equals: hsl(25, 98%, 40%);
---btn-bkgd-equals-shadow: hsl(25, 99%, 27%);
---header-text:  hsl(60, 10%, 19%);
---main-key-text:  hsl(60, 10%, 19%);
---secondary-key-text: white;
---equals-key-text: white;
---toggle-location: center;
+  --display-bkgd: hsl(0, 0%, 93%);
+  --keypad-bkgd: hsl(0, 5%, 81%);
+  --btn-bkgd-main: hsl(45, 7%, 89%);
+  --btn-bkgd-main-shadow: hsl(35, 11%, 61%);
+  --btn-bkgd-reset: hsl(185, 42%, 37%);
+  --btn-bkgd-reset-shadow: hsl(185, 58%, 25%);
+  --btn-bkgd-equals: hsl(25, 98%, 40%);
+  --btn-bkgd-equals-shadow: hsl(25, 99%, 27%);
+  --header-text: hsl(60, 9%, 19%);
+  --prev-oper-text: hsla(60, 9%, 19%, 0.7);
+  --main-key-text: hsl(60, 10%, 19%);
+  --secondary-key-text: white;
+  --equals-key-text: white;
+  --toggle-location: center;
 
 
 }
 
 [class="theme3"] {
   --body-bkgd: hsl(268, 75%, 9%);
---display-bkgd:  hsl(268, 71%, 12%);
---keypad-bkgd: hsl(268, 71%, 12%);
---btn-bkgd-main: hsl(268, 47%, 21%);
---btn-bkgd-main-shadow: hsl(290, 70%, 36%);
---btn-bkgd-reset: hsl(281, 89%, 26%);
---btn-bkgd-reset-shadow: hsl(285, 91%, 52%);
---btn-bkgd-equals: hsl(176, 100%, 44%);
---btn-bkgd-equals-shadow: hsl(177, 92%, 70%);
---header-text:  hsl(52, 100%, 62%);
---main-key-text:  hsl(52, 100%, 62%);
---secondary-key-text: white;
---equals-key-text: hsl(198, 20%, 13%);
---toggle-location: end;
+  --display-bkgd: hsl(268, 71%, 12%);
+  --keypad-bkgd: hsl(268, 71%, 12%);
+  --btn-bkgd-main: hsl(268, 47%, 21%);
+  --btn-bkgd-main-shadow: hsl(290, 70%, 36%);
+  --btn-bkgd-reset: hsl(281, 89%, 26%);
+  --btn-bkgd-reset-shadow: hsl(285, 91%, 52%);
+  --btn-bkgd-equals: hsl(176, 100%, 44%);
+  --btn-bkgd-equals-shadow: hsl(177, 92%, 70%);
+  --header-text: hsl(52, 100%, 62%);
+  --prev-oper-text: hsla(52, 100%, 62%, 0.7);
+  --main-key-text: hsl(52, 100%, 62%);
+
+  --secondary-key-text: white;
+  --equals-key-text: hsl(198, 20%, 13%);
+  --toggle-location: end;
 
 }
 
@@ -83,10 +87,11 @@ h1 {
 
 #app {
   width: 350px;
-  height:90vh;  
+  height: 90vh;
   max-height: 700px;
   margin: 0 auto;
   text-align: center;
+
   @media only screen and (min-width: 500px) {
     width: 60vh;
     max-height: 900px;
@@ -96,11 +101,11 @@ h1 {
 }
 
 .calculator {
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .calculator__header {
@@ -108,7 +113,7 @@ align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   color: var(--header-text);
 
   & h1 {
@@ -121,8 +126,9 @@ align-items: center;
   width: 130px;
   display: flex;
   flex-direction: row;
-    justify-content: space-between;
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
+
   & p {
     font-size: 0.8rem;
     font-weight: 800;
@@ -166,29 +172,38 @@ align-items: center;
 }
 
 .calculator__display {
- height: 100px;
- width: 100%;
-  margin:  30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100px;
+  margin: 30px 0;
   background-color: var(--display-bkgd);
+  color: var(--header-text);
+  font-weight: 700;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
   border-radius: 0.7rem;
-    @media only screen and (min-width: 500px) {
-      width: 90%;
-      height: 150px;
-    }
+
+  & p {
+    width: 90%;
+    margin: auto;
+  }
+
+  @media only screen and (min-width: 500px) {
+    width: 90%;
+    height: 150px;
+  }
 }
 
-.display__content {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-text-align: right;  justify-content: center;
-  width: 95%;
-  max-width: 95%;
-  height: 100%;
+.prev-operand {
+  color: var(--prev-oper-text);
+  font-size: 1.5rem;
+}
+
+.curr-operand {
   font-size: 3.7rem;
-  font-weight: 700;
-  color: var(--header-text);
-  overflow-x: auto;
 }
 
 .calculator__keypad {
@@ -200,7 +215,8 @@ text-align: right;  justify-content: center;
   background-color: var(--keypad-bkgd);
   padding: 30px;
   border-radius: 0.7rem;
-  @media only screen and (min-width: 500px){
+
+  @media only screen and (min-width: 500px) {
     gap: 25px;
     height: 60%;
   }
@@ -218,18 +234,19 @@ text-align: right;  justify-content: center;
   font-family: 'League Spartan', sans-serif;
   box-shadow: 0 3px var(--btn-bkgd-main-shadow);
 
-    &:hover {
+  &:hover {
     filter: brightness(1.5);
   }
 }
 
 
-.reset, .delete {
+.reset,
+.delete {
   background-color: var(--btn-bkgd-reset);
-    box-shadow: 0 3px var(--btn-bkgd-reset-shadow);
-    color: var(--secondary-key-text);
-    font-size: 1.7rem;
-    text-transform: uppercase;
+  box-shadow: 0 3px var(--btn-bkgd-reset-shadow);
+  color: var(--secondary-key-text);
+  font-size: 1.7rem;
+  text-transform: uppercase;
 
 }
 
@@ -241,8 +258,6 @@ text-align: right;  justify-content: center;
 .equals {
   grid-column: 3/5;
   background-color: var(--btn-bkgd-equals);
-    box-shadow: 0 3px var(--btn-bkgd-equals-shadow);
-    color: var(--equals-key-text)
-
+  box-shadow: 0 3px var(--btn-bkgd-equals-shadow);
+  color: var(--equals-key-text)
 }
-
